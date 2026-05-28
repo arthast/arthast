@@ -32,9 +32,12 @@
 
 ## Projects
 
+* **NetWatch** — Микросервисная система мониторинга сетевых сервисов на C++. Позволяет регистрировать HTTP/TCP targets, выполнять ручные и периодические проверки доступности, сохранять историю проверок в PostgreSQL и отслеживать алерты при падении/восстановлении сервисов. Внешний HTTP API работает через api-gateway, внутреннее взаимодействие сервисов построено на gRPC/Protobuf.
+  **[NetWatch](https://github.com/arthast/NetWatch)**
+Tech Stack: C++20, userver, gRPC/Protobuf, PostgreSQL, Docker, CMake, Swagger/OpenAPI, pytest/userver testsuite
+
 * **metricsys** — Микросервисная система веб-метрик на C++. Сервис агрегации: агрегация по gRPC в 5-минутные бакеты, хранение в PostgreSQL.
   **[metricsys](https://github.com/OlegKovalenko00/cpp-project)**\
 Tech Stack: C++23, gRPC/Protobuf, RabbitMQ, PostgreSQL, Docker, CMake
-
 
 
