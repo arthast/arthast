@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-direction: column; gap: 5px;">
   <div>
-    Резюме: <a href="https://github.com/arthast/arthast/blob/main/Resume2.pdf" target="_blank">Takhunov_Arsen_CV</a>
+    Резюме: <a href="https://github.com/arthast/arthast/blob/main/Takhunov_Arsen_CV.pdf" target="_blank">Takhunov_Arsen_CV</a>
   </div>
   <div>
     Почта: <a href="mailto:arsentakhunov@gmail.com">arsentakhunov@gmail.com</a>
