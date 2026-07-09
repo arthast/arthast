@@ -33,8 +33,12 @@
 
 ## Projects
 
+* **TutorFlow** — Микросервисная образовательная платформа для взаимодействия репетиторов и учеников на C++. Позволяет управлять расписанием занятий, домашними заданиями, сдачами и проверками работ, файлами, чеками об оплате, финансовым учётом, in-app уведомлениями, отчётами, личным чатом и realtime push-обновлениями через WebSocket. Внешний REST API реализован через `api-gateway`, внутреннее взаимодействие сервисов построено на gRPC, асинхронные доменные события обрабатываются через Kafka с transactional outbox и inbox-дедупликацией. Данные хранятся в PostgreSQL с отдельной БД на сервис, файлы — через MinIO/S3, realtime-слой использует Redis.
+  **[TutorFlow](https://github.com/arthast/TutorFlow)** · **[Demo](https://netwatch-arsen-demo.ru)**\
+Tech Stack: C++20, userver, gRPC, Kafka, PostgreSQL, Redis, MinIO/S3, Docker Compose, CMake, React, TypeScript, Caddy, CI/CD, Kubernetes
+
 * **NetWatch** — Микросервисная система мониторинга HTTP/TCP сервисов на C++. Позволяет регистрировать targets, запускать ручные и периодические проверки доступности, хранить историю результатов в PostgreSQL, отслеживать алерты при падении/восстановлении сервисов и отправлять email-уведомления через Kafka. Внешний HTTP API реализован через `api-gateway`, внутреннее взаимодействие сервисов построено на gRPC/Protobuf, документация доступна через Swagger/OpenAPI.
-  **[NetWatch](https://github.com/arthast/NetWatch)** · **[Demo](https://netwatch-arsen-demo.online/docs#/)**\
+  **[NetWatch](https://github.com/arthast/NetWatch)**
 Tech Stack: C++20, userver, gRPC, Kafka, PostgreSQL, Docker, CMake, Swagger/OpenAPI, CI/CD
 
 * **metricsys** — Микросервисная система веб-метрик на C++. Сервис агрегации: агрегация по gRPC в 5-минутные бакеты, хранение в PostgreSQL.
