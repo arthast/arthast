@@ -1,4 +1,4 @@
-## **C++ Developer · HSE University · 2nd-year Student**
+## **C++ Developer · HSE University · 3nd-year Software Engineer Student**
 
 <div style="display: flex; flex-direction: column; gap: 5px;">
   <div>
