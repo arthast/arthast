@@ -1,4 +1,4 @@
-## **C++ Developer · HSE University · 3nd-year Software Engineer Student**
+## **Backend Developer · HSE University · 3nd-year Software Engineer Student**
 
 <div style="display: flex; flex-direction: column; gap: 5px;">
   <div>
@@ -22,7 +22,6 @@
 ## Tech Stack
 
 ![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=C%2B%2B&logoColor=white)
-![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Apache Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?style=for-the-badge&logo=apache-kafka&logoColor=white)
@@ -31,11 +30,20 @@
 
 ---
 
+**Яндекс Лавка — стажёр C++ Backend (2026)** — Разрабатывал бэкенд скидок, промокодов и рекламных кампаний. 
+* Вёл бэкенд «Чёрной пятницы» от постановки до релиза: уточнял требования с продактом, согласовывал API со смежными командами, реализовал скидочные стикеры и рекламную карусель. Довел проект до прода.
+* В проекте «Промокоды за монеты» связал три сервиса, чтобы корзина показывала доступные награды с учётом баланса, лимитов и условий промокодов и сортировала их по выгоде. 
+* Спроектировал и реализовал выбор рекомендованного промокода на сервере, сохранив совместимость API на время миграции клиента.
+  
+Tech Stack: C++, userver, OpenAPI, Python, CI/CD
+
+---
+
 ## Projects
 
 * **TutorFlow** — Микросервисная образовательная платформа для взаимодействия репетиторов и учеников на C++. Позволяет управлять расписанием занятий, домашними заданиями, сдачами и проверками работ, файлами, чеками об оплате, финансовым учётом, in-app уведомлениями, отчётами, личным чатом и realtime push-обновлениями через WebSocket. Внешний REST API реализован через `api-gateway`, внутреннее взаимодействие сервисов построено на gRPC, асинхронные доменные события обрабатываются через Kafka с transactional outbox и inbox-дедупликацией. Данные хранятся в PostgreSQL с отдельной БД на сервис, файлы — через MinIO/S3, realtime-слой использует Redis.
   **[TutorFlow](https://github.com/arthast/TutorFlow)** · **[Demo](https://netwatch-arsen-demo.ru)**\
-Tech Stack: C++20, userver, gRPC, Kafka, PostgreSQL, Redis, MinIO/S3, Docker Compose, CMake, React, TypeScript, Caddy, CI/CD, Kubernetes
+Tech Stack: C++20, userver, gRPC, Kafka, PostgreSQL, Redis, MinIO/S3, Docker Compose, CMake, Caddy, CI/CD, Kubernetes
 
 * **NetWatch** — Микросервисная система мониторинга HTTP/TCP сервисов на C++. Позволяет регистрировать targets, запускать ручные и периодические проверки доступности, хранить историю результатов в PostgreSQL, отслеживать алерты при падении/восстановлении сервисов и отправлять email-уведомления через Kafka. Внешний HTTP API реализован через `api-gateway`, внутреннее взаимодействие сервисов построено на gRPC/Protobuf, документация доступна через Swagger/OpenAPI.
   **[NetWatch](https://github.com/arthast/NetWatch)**
